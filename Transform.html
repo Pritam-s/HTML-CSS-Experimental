@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Css</title>
+
+
+    <style>
+        .rect {
+            background-color: #5f9ee5;
+            border: 10px solid #00A8A8;
+            height: 40px;
+            width: 60px;
+            transform: translate(10px, 20px) ;
+            /* animation: slide 5s linear infinite; */
+            animation: slide linear 1s infinite alternate;
+        }
+
+        @keyframes slide{
+           from{
+               transform: translate(-20px);
+           }
+           to{
+               transform: translate(20px);
+           }
+       }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="rect"></div>
+</body>
+</html>
