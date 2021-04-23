@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gallery</title>
+
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            box-sizing: border-box;
+        }
+
+        .GalleryContainer {
+            margin: 5rem;
+            /* border: 3px solid black; */
+            box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 0.1);
+            /* box-shadow: x-offset y-offset blur spread color */
+        }
+        .GalleryContainer h3{
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        .GalleryWrapper {
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-gap: 2rem;
+            /* justify-content: center; */
+        }
+
+        .Card {
+            /* border: 3px solid green; */
+            margin: 4rem;
+            box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .Card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="GalleryContainer">
+        <h3>This is a Image Gallery using CSS Grids and Cards</h3>
+
+        <div class="GalleryWrapper">
+
+            
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="Card">
+                <img src="https://source.unsplash.com/collection/190727/1600x900" alt="Random Image">
+                <div class="CardDesc">
+                    <h2>Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+</body>
+
+</html>
