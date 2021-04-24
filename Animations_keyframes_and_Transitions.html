@@ -15,104 +15,124 @@
             border: 4px solid rgb(0, 13, 128);
             height: 100vh;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
         }
 
-        #box1 {
-            border: 3px solid rgb(153, 44, 111);
-            height: 200px;
-            width: 200px;
-            background-color: palegreen;
-            position: relative;
-            top: 15%;
-
-            animation-name: nik1;
-            animation-duration: 3s;
+/*         .element {
+            animation-name: stretch;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-direction: alternate;
             animation-iteration-count: infinite;
+            animation-fill-mode: none;
+            animation-play-state: running;
         }
 
-        #box2 {
-            border: 3px solid rgb(153, 44, 111);
-            height: 200px;
-            width: 200px;
-            margin-top: 80px;
-            background-color: paleturquoise;
-            position: relative;
-            top: 15%;
-
-            animation-name: nik2;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-        }
-
-        #box3 {
-            border: 3px solid rgb(153, 44, 111);
-            height: 200px;
-            width: 200px;
-            margin-top: 80px;
-            background-color:plum;
-            position: relative;
-            top: 15%;         
-        }
-
-        #box3:hover {
-            border: 3px solid rgb(153, 44, 111);
-            height: 200px;
-            width: 200px;
-            margin-top: 80px;
-            background-color:rgb(160, 166, 221);
-            position: relative;
-            top: 15%;
-
-            animation-name: keyframe_test;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;     
-
-            transition: 0.5s;       
-        }
+    
+  is the same as:
 
 
-        @keyframes keyframe_test {
-            from{
-                width:200px;
-            }
-            to{
-                width: 70vw;
-            }            
-        }
-
-        @keyframes nik1 {
-            from {
+        .element {
+            animation:
+                stretch 1.5s ease-out 0s alternate infinite none running; }
+ */
+            #box1 {
+                border: 3px solid rgb(153, 44, 111);
+                height: 200px;
                 width: 200px;
+                background-color: palegreen;
+                position: relative;
+                top: 15%;
+
+                animation-name: nik1;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
             }
 
-            to {
-                width: 500px;
-            }
-        }
+            #box2 {
+                border: 3px solid rgb(153, 44, 111);
+                height: 200px;
+                width: 200px;
+                margin-top: 80px;
+                background-color: paleturquoise;
+                position: relative;
+                top: 15%;
 
-        @keyframes nik2 {
-            0% {
-                top: 0px;
-                left: 0px;
-            }
-
-            25% {
-                top: 100px;
-                left: 0px;
+                animation-name: nik2;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
             }
 
-            75% {
-                top: 100px;
-                left: 100px;
+            #box3 {
+                border: 3px solid rgb(153, 44, 111);
+                height: 200px;
+                width: 200px;
+                margin-top: 80px;
+                background-color: plum;
+                position: relative;
+                top: 15%;
             }
 
-            100% {
-                top: 0px;
-                left: 100px;
+            #box3:hover {
+                border: 3px solid rgb(153, 44, 111);
+                height: 200px;
+                width: 200px;
+                margin-top: 80px;
+                background-color: rgb(160, 166, 221);
+                position: relative;
+                top: 15%;
+
+                animation-name: keyframe_test;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+
+                transition: 0.5s;
             }
 
-        }
+
+            @keyframes keyframe_test {
+                from {
+                    width: 200px;
+                }
+
+                to {
+                    width: 70vw;
+                }
+            }
+
+            @keyframes nik1 {
+                from {
+                    width: 200px;
+                }
+
+                to {
+                    width: 500px;
+                }
+            }
+
+            @keyframes nik2 {
+                0% {
+                    top: 0px;
+                    left: 0px;
+                }
+
+                25% {
+                    top: 100px;
+                    left: 0px;
+                }
+
+                75% {
+                    top: 100px;
+                    left: 100px;
+                }
+
+                100% {
+                    top: 0px;
+                    left: 100px;
+                }
+
+            }
     </style>
 
 </head>
@@ -129,7 +149,7 @@
             This is a box for animations
         </div>
 
-        
+
         <div id="box3">
             Click Me
         </div>
