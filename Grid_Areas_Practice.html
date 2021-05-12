@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Area Practice</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 1.5fr 1.2fr ;
+        grid-template-rows: 1fr 2fr 1.5fr 1.5fr;
+        grid-template-areas: 
+        "sidebar header header header"
+        "sidebar sect1 sect2 sect3"
+        "sidebar main main main"
+        "sidebar footer footer footer";
+
+    }
+
+    header{
+        background-color: paleturquoise;
+        grid-area: header;
+    }
+    aside{
+        background-color: rgb(73, 100, 255);
+        grid-area: sidebar;
+    }
+    section:nth-of-type(1){
+        background-color: rgb(175, 153, 246);
+        grid-area: sect1;
+    }
+    section:nth-of-type(2){
+        background-color: rgb(248, 142, 243);
+        grid-area: sect2;
+    }
+    section:nth-of-type(3){
+        background-color: rgb(219, 92, 151);
+        grid-area: sect3;
+    }
+
+    main{
+        background-color: rgb(100, 142, 211);
+        grid-area: main;
+    }
+
+    footer{
+        background-color: rgb(240, 199, 221);
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <header>Lorem ipsum dolor sit amet.</header>
+    <aside>Lorem ipsum dolor sit amet.</aside>    
+    <section>Lorem ipsum dolor sit amet.</section>
+    <section>Lorem ipsum dolor sit amet.</section>
+    <section>Lorem ipsum dolor sit amet.</section>
+    <main>Lorem ipsum dolor sit amet.</main>
+    <footer>Lorem ipsum dolor sit amet.</footer>
+</body>
+</html>
