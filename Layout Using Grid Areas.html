@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Using Grid-Areas</title>
+
+    <style>
+        body{
+            height: 100vh;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.2fr 1fr;
+            grid-template-areas: 
+            "header header";
+        }
+
+        header{
+            margin-inline: 6rem;
+            padding: 1rem;
+        }
+
+        header{
+            grid-area: header;
+            background-color: palegoldenrod;
+            display: flex;
+            justify-content: space-between;
+            align-items:baseline;
+        }
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .navbar{
+            grid-area: navbar;
+        }
+        
+
+        nav a{
+            text-decoration: none;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding-left: 5rem;
+        }
+        nav ul{
+            padding: 0;
+            display: flex;
+        
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+        <header>
+
+            <div class="logo">
+                PRITAM_S
+            </div>
+    
+            
+                <nav class="navbar">
+                    <ul>
+                        <li> <a href=""> Home </a> </li>
+                        <li> <a href=""> About</a> </li>
+                        <li> <a href=""> Services</a> </li>
+                        <li> <a href=""> Contact </a> </li>
+                    </ul>
+                </nav>
+
+        </header>
+
+ 
+            
+
+    
+
+
+    
+</body>
+</html>
